@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: tommy
+title: Tommy Clark
 email: thomaskclark@gmail.com
 myname: Tommy Clark
 description: > # this means to ignore newlines until "baseurl:"
-  Hi! I'm a Software Developer in Los Angeles specializing in Full-Stack Web Development and Network programming.
+  Hi! I'm a Software Developer in Los Angeles specializing in Full-Stack Web Development and mobile applications.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
@@ -26,8 +26,13 @@ github_username: nltommy
 instagram_username: tommyclarkii
 
 # Build settings
+permalink: /:categories/:year/:month/:day/:title
 markdown: kramdown
 # theme: minima
+
+collections:
+  - answers
+
 gems:
   - jekyll-feed
   - jekyll-sitemap
